@@ -1,0 +1,41 @@
+package com.company;
+
+import com.sun.jdi.Value;
+
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in =new Scanner(System.in);
+        HashMap<Integer,String>map=new HashMap<Integer,String>();
+        System.out.print("Enter the size of the map : ");
+        int size=in.nextInt();
+        System.out.println("Enter the Key and Value ");
+        for(int i=0;i<size;i++)
+        {
+            map.put(in.nextInt(), in.nextLine().trim());
+        }
+        System.out.println("The Key Value pair is "+map);
+        System.out.print("Enter the key to remove in HashMap: ");
+        int remove_key=in.nextInt();
+        map.remove(remove_key);
+        System.out.println("The key "+remove_key+" after removing is "+map);
+
+
+
+
+
+
+    }
+
+}
+
+
+
+
+
+
+
